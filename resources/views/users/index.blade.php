@@ -67,7 +67,7 @@
 
                         
                               <form action="{{ route('users.destroy', $user) }}"method="POST">
-                             @method('DELETE') 
+                             @method('ELIMINAR') 
                              @csrf 
                              <input
                                     type="submit" 
