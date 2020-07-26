@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -43,5 +44,13 @@ class UserController extends Controller
       $user->delete();
       /* con esta funcion retornamos*/
       return back();
+    }
+
+    public function logout ()
+    {
+      
+      Auth::logout();
+
+      return redirect('/');
     }
 }

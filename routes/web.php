@@ -20,3 +20,5 @@ Route::delete('users/{user}', 'UserController@destroy')->name('users.destroy');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', 'UserController@logout')->name('logout');
